@@ -1,0 +1,24 @@
+{
+  "name": "swagger-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-bd/swagger-bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/os-bd/swagger-bridge/issues"
+  },
+  "homepage": "https://github.com/os-bd/swagger-bridge#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^5.0.0",
+    "swagger-js-codegen-purvar": "^1.18.2"
+  }
+}
