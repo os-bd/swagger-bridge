@@ -1,10 +1,10 @@
 const axios = require("axios");
 const fs = require("fs");
 const CodeGen = require("swagger-js-codegen-purvar/lib/founder").CodeGen;
-const fn = require("swagger-js-codegen-purvar").fn;
+const {resolve} = require('path')
 
 exports.main = async function() {
-  const config = fs.readFileSync(__dirname + "/../.swagger-bridge.json");
+  const config = fs.readFileSync(resolve('./') + "/.swagger-bridge.json");
   let json;
   try {
     json = JSON.parse(config);
