@@ -3,18 +3,21 @@
     "url": "http://localhost:8000/website/swagger/swagger-datapub.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": ["/test/"]
+    "exculde": ["/test/"],
+    "version": "2"
   },
   "platform": {
     "url": "http://localhost:8000/website/swagger/swagger-platform.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": ["/test/"]
+    "exculde": ["/test/"],
+    "version": "2"
   },
   "default": {
     "url": "http://localhost:8000/website/swagger/swagger-de.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": []
+    "exculde": [],
+    "version": "2"
   }
 }
