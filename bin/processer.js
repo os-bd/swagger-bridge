@@ -13,9 +13,14 @@ exports.main = async function() {
   }
   for (const item in json) {
     const url = json[item].url;
-    const moduleName = item === 'default' ? '' : item;
     const unittest = json[item].unittest;
     const version = json[item].version;
+    let moduleName;
+    if (version === "1") {
+      moduleName = item === 'default' ? '' : item;
+    } else {
+      moduleName = item;
+    }
     const result = await axios.get(url);
     if (result.data !== undefined ){
       let content = JSON.stringify(result.data);
