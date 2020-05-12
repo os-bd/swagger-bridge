@@ -4,20 +4,20 @@
     "mock-data": false,
     "unittest": false,
     "exculde": ["/test/"],
-    "version": "2"
+    "version": "3"
   },
   "platform": {
     "url": "http://localhost:8000/website/swagger/swagger-platform.json",
     "mock-data": false,
     "unittest": false,
     "exculde": ["/test/"],
-    "version": "2"
+    "version": "3"
   },
   "default": {
     "url": "http://localhost:8000/website/swagger/swagger-de.json",
     "mock-data": false,
     "unittest": false,
     "exculde": [],
-    "version": "2"
+    "version": "3"
   }
 }
