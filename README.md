@@ -3,6 +3,14 @@ swagger-bridge
 
 ## 配置
 项目根目录下配置 .swagger-bridge.json 文件
+package.json
+```
+{
+  "scripts": {
+    "swagger": "node ./node_modules/swagger-bridge/bin/index.js"
+  }
+}
+```
 
 ## 内容组成
 * 每个key对应一个后端swagger地址，会对应生成一个文件
