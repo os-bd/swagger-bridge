@@ -15,6 +15,7 @@ exports.main = async function() {
     const url = json[item].url;
     const unittest = json[item].unittest;
     const version = json[item].version;
+    const exclude = json[item].exclude;
     const moduleName = item === 'default' ? '' : item;
     const result = await axios.get(url);
     if (result.data !== undefined ){
@@ -34,7 +35,7 @@ exports.main = async function() {
         swagger: swagger,
         lint: false,
         beautify: false,
-        exclude: [],
+        exclude: exclude,
         unittest: unittest,
         version: version
       });
