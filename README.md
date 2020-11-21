@@ -17,21 +17,21 @@ swagger-bridge
     "url": "http://localhost:8000/website/swagger/swagger-datapub.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": ["/test/"],
+    "exclude": ["/test/"],
     "version": "3"
   },
   "platform": {
     "url": "http://localhost:8000/website/swagger/swagger-platform.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": ["/test/"],
+    "exclude": ["/test/"],
     "version": "3"
   },
   "default": {
     "url": "http://localhost:8000/website/swagger/swagger-de.json",
     "mock-data": false,
     "unittest": false,
-    "exculde": [],
+    "exclude": [],
     "version": "3"
   }
 }
