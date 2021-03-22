@@ -1,4 +1,5 @@
 const axios = require("axios");
+const https = require('https');
 const fs = require("fs");
 const CodeGen = require("swagger-js-codegen-purvar/lib/founder").CodeGen;
 const {resolve} = require('path')
@@ -17,7 +18,11 @@ exports.main = async function() {
     const version = json[item].version;
     const exclude = json[item].exclude;
     const moduleName = item === 'default' ? '' : item;
-    const result = await axios.get(url);
+    const result = await axios.get(url, {
+      httpsAgent: new https.Agent({
+        rejectUnauthorized: false
+      })
+    });
     if (result.data !== undefined ){
       let content = JSON.stringify(result.data);
       
