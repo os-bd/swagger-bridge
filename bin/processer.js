@@ -1,7 +1,7 @@
 const axios = require("axios");
 const https = require('https');
 const fs = require("fs");
-const CodeGen = require("swagger-js-codegen-purvar/lib/founder").CodeGen;
+const CodeGen = require("swagger-js-codegen-byteluck/lib/founder").CodeGen;
 const {resolve} = require('path')
 
 exports.main = async function() {
@@ -28,7 +28,7 @@ exports.main = async function() {
       
       content = content.replace(/Map«string,object»/gi, "MapObject");
       content = content.replace(/Map«string,List»/gi, "MapObject");
-      content = content.replace(/Map«string,List«OptionalData»»/gi, "MapObject");
+      content = content.replace(/Map«string,List«.*?»»/gi, "MapObject");
       content = content.replace(/Map«string,string»/gi, "MapObject");
       content = content.replace(/«/gi, "$").replace(/»/gi, "$");
   
