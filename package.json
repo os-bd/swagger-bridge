@@ -18,6 +18,6 @@
   "homepage": "https://github.com/os-bd/swagger-bridge#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "swagger-js-codegen-byteluck": "^2.0.5"
+    "swagger-js-codegen-byteluck": "^2.0.6"
   }
 }
